@@ -1,0 +1,62 @@
+<div class="col-md-6 offset-md-3">
+    <h2 style="text-align: center ">Actualizar empleado</h2>
+    <form class="form-group"> 
+      <div class="form-group">
+     
+        <label>Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Ingrese su nombre"
+          [(ngModel)] = "employee.nombre"
+          name="nombre"
+        />
+      </div>
+      <div class="form-group">
+        <br>
+        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput2"
+          placeholder=" Ingrese su apellido"
+          [(ngModel)] = "employee.apellido"
+          #apellido = "ngModel"
+          name="apellido"
+        />
+      </div>
+      <div class="form-group">
+        <br>
+        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput3"
+          placeholder=" ingrese su telefono"
+          [(ngModel)] = "employee.telefono"
+          name="telefono"
+        />
+        <label for="exampleFormControlInput1" class="form-label">Cargo</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput3"
+          placeholder="ingrese su cargo"
+          [(ngModel)] = "employee.cargo"
+          name="cargo"
+        
+        />
+      </div>
+    
+      <br />
+      <div>
+        <button type="button" class="btn btn-primary" (click)="update(employee)" style="margin-right: 50px;">Actualizar</button>
+        
+        <!-- <button type="button" class="btn btn-secondary"  style="margin-right: 50px;"  (click)="Manage()">Gestionar</button>
+       <button type="button" class="btn btn-secondary"  style="margin-right: 50px;">Actualizar</button>
+      --></div>
+    </form>
+    
+  </div>
+  

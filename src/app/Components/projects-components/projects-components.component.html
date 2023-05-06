@@ -1,0 +1,54 @@
+<div class="col-md-6 offset-md-3">
+    <h2 style="text-align: center ">Registro Proyectos</h2>
+    <form class="form-group"> 
+      <div class="form-group">
+     
+        <label>Descripcion</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Descripcion del proyecto"
+        
+          name="Descripcion"
+        />
+      </div>
+      <br>
+      <select class="form-select" id="particip" aria-label="Default select example">
+        <option selected>Participantes
+        <option value="1" *ngFor="let item of participantes">{{item.nombre}}</option>
+ 
+      </select>
+      <div class="form-group">
+        <br>
+        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput3"
+          placeholder=" ingrese su telefono"
+         
+          name="telefono"
+        />
+        <label for="exampleFormControlInput1" class="form-label">Cargo</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput3"
+          placeholder="ingrese su cargo"
+      
+          name="telefono"
+        />
+      </div>
+    
+      <br />
+      <div>
+        <button type="button" class="btn btn-primary" style="margin-right: 50px;">Agregar</button>
+        
+        <!-- <button type="button" class="btn btn-secondary"  style="margin-right: 50px;"  (click)="Manage()">Gestionar</button>
+       <button type="button" class="btn btn-secondary"  style="margin-right: 50px;">Actualizar</button>
+      --></div>
+    </form>
+    
+  </div>
+  

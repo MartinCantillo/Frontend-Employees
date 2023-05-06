@@ -1,0 +1,35 @@
+
+<div class="container ">
+  <table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th> Codigo</th>
+            <th> Nombre</th>
+            <th> Apellido</th>
+            <th> Telefono</th>
+            <th> Cargo</th>
+            <th> Opciones </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of EmployeList">
+            <td>{{item.codigo}}</td>
+            <td >{{item.nombre}}</td>
+            <td >{{item.apellido}}</td>
+            <td >{{item.telefono}}</td>
+            <td >{{item.cargo}}</td>
+            <td>
+                <button type="button" class="btn btn-dark" style="margin-right: 50px;"  (click)=" FindEmployee(item,item.codigo)">Actualizar</button>
+                <button type="button" class="btn btn-danger" (click)="deleteEmployee(item)">Eliminar</button>
+            </td>
+           <!--- <td th:text="${Estudiante.programa}">Programa</td>
+           -->
+        </tr>
+    </tbody>
+</table>
+<br>
+</div>
+
+
+   
